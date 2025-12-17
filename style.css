@@ -1,0 +1,25 @@
+h1,
+h2 {
+    color: black;
+    font-family: Georgia;
+    font-size: 24px;
+    text-align: left;
+}
+
+p {
+    color: black;
+    font-family: Tahoma;
+    font-size: 16px;
+    text-align: justify;
+}
+
+body {
+    background-color: #e6f3f8;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin: 20px 0;
+}
