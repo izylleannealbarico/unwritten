@@ -4,6 +4,7 @@ h3 {
     color: black;
     font-family: Georgia;
     text-align: left;
+    text-shadow: 5px 4px 3px black;
 }
 
 p {
