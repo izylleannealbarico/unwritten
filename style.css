@@ -141,34 +141,35 @@ footer {
     color: #CBC3E3;
 }
 
-/* 1. The Container: This handles the "Right" alignment */
+/* Positioning the container */
 .next-container {
-    display: flex;             /* Modern way to align items */
-    justify-content: flex-end; /* Pushes the button to the right */
+    display: flex;
+    justify-content: flex-end;
     width: 100%;
     box-sizing: border-box;
-    padding-right: 15%;        /* Moves it away from the far right edge */
+    padding-right: 15%; /* Keeps it away from the edge */
     margin-top: 30px;
     margin-bottom: 20px;
-    background-color: transparent; /* Makes sure the giant blue block disappears */
 }
 
-/* 2. The Button: This handles the "Blue Box" look */
-.next {
-    background-color: #00008b; /* The blue color goes here */
-    color: white !important;    /* Forces text color to be white */
-    padding: 10px 25px;         /* Creates the button shape */
-    border: none;
+/* Styling the actual button */
+.next, 
+.next:link, 
+.next:visited {
+    background-color: #00008b;
+    color: #FFFFFF !important;      /* Forces text to white */
+    font-family: Arial, Helvetica, sans-serif !important; /* Forces Arial */
+    padding: 10px 25px;
     border-radius: 5px;
-    cursor: pointer;
-    font-family: Arial, sans-serif;
+    text-decoration: none;           /* Removes underline */
     font-size: 16px;
     font-weight: bold;
-    text-decoration: none;      /* Removes underline if it's a link */
-    display: inline-block;
+    display: inline-block;           /* Makes the box fit the text */
+    text-align: center;
 }
 
-/* Optional: Hover effect */
+/* Hover effect */
 .next:hover {
     background-color: #0000cd;
+    color: #FFFFFF !important;
 }
