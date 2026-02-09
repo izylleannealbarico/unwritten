@@ -1,4 +1,36 @@
 
+header {
+    position: relative; 
+    padding-top: 40px;
+    margin-top: 0;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    height: 200px;
+    background-color: #002147;
+    box-shadow: 0px 4px 8px #0000004d;
+    
+}
+
+.header-nav {
+    position: absolute;
+    top: 20px;    /* Distance from the very top */
+    right: 25px;  /* Distance from the right edge */
+}
+
+/* 3. Style the icon itself */
+.home-link i {
+    font-size: 24px;   /* Makes the house a bit easier to see */
+    cursor: pointer;
+    transition: transform 0.2s; /* Smooth pop effect on hover */
+}
+
+.home-link i:hover {
+    color: #CBC3E3 !important; /* Changes color when you point at it */
+    transform: scale(1.1);      /* Makes it slightly larger on hover */
+}
+
+
+
 h1, h3, h4{
   text-align: center; 
   color: white; 
@@ -23,15 +55,6 @@ p {
     text-align: justify;
     line-height: 2;
     
-}
-
-header { 
-    margin-top: 0;
-    padding-top: 40px;
-    padding-bottom: 40px;
-    height: 200px;
-    background-color: #002147;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
 }
 
 body {
@@ -60,4 +83,117 @@ body {
     color: #333;
 }
 
+footer {
+    background-color: #002147;
+    color: white;
+    text-align: center;
+    padding: 40px 0; 
+    width: 100%;
+    position: static;
+    margin-top: 50px;
+    font-family: Arial, sans-serif;
+}
 
+.rights{
+    color: #FFFFFF;
+    font-size: 16px;       
+    font-family: Arial, sans-serif;   
+    text-align: center;
+
+}
+
+.contacts {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0;
+    display: flex;
+    flex-direction: column; /* Stacks the email on top of the Facebook link */
+    align-items: center;    /* Centers the stack horizontally */
+    gap: 15px;              /* Space between the two rows */
+}
+
+.contacts li {
+    display: flex;          /* Keeps icon and text side-by-side */
+    align-items: center;    /* Keeps icon and text leveled vertically */
+    justify-content: flex-start; /* Aligns content within the flex-box */
+    gap: 12px;              /* Space between icon and text */
+    width: fit-content;     /* Ensures the hover effect only covers the text/icon */
+}
+
+.contacts i {
+    color: #e0d6ff;         /* Icon color */
+    font-size: 1.2rem;      /* Makes icons slightly larger than text */
+    width: 20px;            /* Fixed width so text starts at the same spot */
+    text-align: center;
+}
+
+.contacts a {
+    color: #FFFFFF;
+    text-decoration: none;
+    font-size: 13px;        /* Standard readable size */
+    font-family: Arial, sans-serif;
+}
+
+.contacts a:hover {
+    color: #CBC3E3;
+}
+
+/* Target the .next class specifically for links */
+a.next, 
+a.next:visited, 
+a.next:link {
+    background-color: #00008b;
+    color: #FFFFFF !important; /* Force the text to white */
+    padding: 10px 25px;
+    border-radius: 5px;
+    text-decoration: none;      /* Removes the underline */
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    display: inline-block;      /* Allows padding and width to work */
+    transition: background-color 0.3s;
+}
+
+/* Hover effect stays white too */
+a.next:hover {
+    background-color: #0000cd;
+    color: #FFFFFF !important;
+}
+
+/* Keep your container for positioning */
+/* Target the .next class specifically for links */
+a.next, 
+a.next:visited, 
+a.next:link {
+    background-color: #00008b;
+    color: #FFFFFF !important; /* Force the text to white */
+    padding: 10px 25px;
+    border-radius: 5px;
+    text-decoration: none;      /* Removes the underline */
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    display: inline-block;      /* Allows padding and width to work */
+    transition: background-color 0.3s;
+}
+
+/* Hover effect stays white too */
+a.next:hover {
+    background-color: #0000cd;
+    color: #FFFFFF !important;
+}
+
+/* Keep your container for positioning */
+.next-container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    box-sizing: border-box;
+    
+    /* FIX: Remove "-right" and use just "padding" */
+    /* This sets: Top/Bottom = 0, Left/Right = 15% */
+    padding: 0 15%; 
+    
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
