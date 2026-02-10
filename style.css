@@ -48,6 +48,10 @@ a {
     font-size: 18px;
     color: white;
 }
+
+.nav a:hover{
+    color: #8994c5;
+}
 .center{
     display: flex;
     justify-content: center;
